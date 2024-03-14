@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.stack_child {
+  position: absolute;
+}
+
+.stack_parent {
+  position: relative;
+}
+
+#background {
+  background: linear-gradient(to top, rgb(194, 238, 251), transparent 90%, rgb(194, 238, 251)), url("../img/background0.jpg");
+  background-position-x: 0px;
+}
+
+#protagonist {
+  background: url("../img/protagonist0.png");
+  background-size: cover;
+  width: 80px;
+  height: 50px;
+}
+
+.full_size {
+  height: 100% !important;
+}
+
+.protagonist_x {
+  left: 50px;
+}
+.protagonist_y {
+  top: 45%;
+}
+.choose_events_y {
+  bottom: 160px;
+}
+.score_y {
+  top: 100px;
+}
+.center_x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.center_y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.choose_background_y {
+  bottom: 10px !important;
+}
+.choose_protagonist_y {
+  bottom: 60px !important;
+}
+.choose_obstacle_y {
+  bottom: 110px !important;
+}
+.center_xy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background_cover {
+  background-size: cover !important;
+}
+
+#nextPrevOcPlaceholder {
+  width: 60px !important;
+}
+#nextPrevPtPlaceholder {
+  width: 130px !important;
+}
+#nextPrevPlaceholder {
+  width: 200px !important;
+}
+
+.jumping {
+  transform: rotate(-10deg);
+}
+.falling {
+  transform: rotate(10deg);
+}
+
+#showObstacle {
+  height: 40%;
+  width: 100px;
+  background: url("../img/obstacle0.jpg");
+}
+
+.egg_element {
+  background: url("../img/egg.png");
+}

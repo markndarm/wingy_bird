@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Wingy Bird</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+    <div id="background" class="bg-secondary w-100 h-100 full_size stack_parent overflow-hidden background_cover">
+      <div class="row stack_child center_x choose_obstacle_y start_ui ui_element">
+        <div class="col-auto">
+          <button class="btn btn-primary" id="prevOcButton"><</button>
+        </div>
+        <div class="col-auto text-center">
+          <div id="nextPrevOcPlaceholder" class="bg-primary rounded h-100 text-white pt-2">BRICK</div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary" id="nextOcButton">></button>
+        </div>
+      </div>
+      <div class="row stack_child center_x choose_protagonist_y start_ui ui_element">
+        <div class="col-auto">
+          <button class="btn btn-primary" id="prevPtButton"><</button>
+        </div>
+        <div class="col-auto text-center">
+          <div id="nextPrevPtPlaceholder" class="bg-primary rounded h-100 text-white pt-2">FLAPPY</div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary" id="nextPtButton">></button>
+        </div>
+      </div>
+      <div class="row w-auto stack_child center_x choose_background_y start_ui ui_element">
+        <div class="col-auto">
+          <button class="btn btn-primary" id="prevBgButton"><</button>
+        </div>
+        <div class="col-auto text-center">
+          <div id="nextPrevPlaceholder" class="bg-primary rounded h-100 text-white pt-2">CLOUDS</div>
+        </div>
+        <div class="col-auto">
+          <button class="btn btn-primary" id="nextBgButton">></button>
+        </div>
+      </div>
+      <div class="row stack_child center_x choose_events_y start_ui ui_element bg-primary rounded text-white p-1 text-center justify-content-center">
+        <div class="form-check">
+          <label class="form-check-label" for="eventCheckbox">
+            SPECIAL EVENTS
+          </label>
+          <input id="eventCheckbox" class="form-check-input" type="checkbox" value="">
+        </div>
+      </div>
+      <div id="showObstacle" class="stack_child top-0 protagonist_x bg-primary background_cover start_ui ui_element"></div>
+      <button id="startButton" class="btn btn-primary stack_child center_xy start_ui ui_element">FLY</button>
+      <div id="columnGapContainer" class="stack_child"></div>
+      <div id="protagonist" class="stack_child protagonist_y protagonist_x background_cover"></div>
+      <div id="score" class="h5 center_x score_y stack_child bg-primary text-white p-2 rounded d-none match_ui score_ui ui_element">Score: 0</div>
+      <button id="menuButton" class="btn btn-primary stack_child center_xy score_ui ui_element d-none">MENU</button>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+	</body>
+</html>
